@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <title>Homepage</title>
+
+</head>
+<body>
+    <div w3-include-html="header"></div>
+    <div w3-include-html="carousel"></div>
+    <a href="registration">Registration</a>
+    <a href="products">Products</a>
+    <a href="aboutus">About Us</a>
+    <a href="shoppingcart">Shopping Cart</a>
+    <h1>Welcome</h1>
+    <p th:text="${message}"></p>
+
+</body>
+
+<script src="include.js"></script>
+<script>
+    includeHTML();
+</script>
+</html>
